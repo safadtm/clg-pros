@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body bgcolor="pink">
+    <h1 style="text-align: center;">STUDENT REGISTRATION FORM</h1>
+    <form action="feedback.html" >
+        <table style=" border-spacing: 0 12px;" border="2">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" name="firstName" ></td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" name="lastName" ></td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td  style="vertical-align: top;">ADDRESS</td>
+                <td colspan="2">
+                    <textarea name="address" rows="4" cols="30"></textarea>
+                </td>
+            </tr>        
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    Male<input type="radio" name="gender" value="male"> 
+                    Female<input type="radio" name="gender" value="female"> 
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="email" name="email" ></td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px; white-space: nowrap;">MOBILE NUMBER</td>
+                <td style="padding-right: 10px;"><label for="mobile number" style="white-space: nowrap;"><input type="tel" name="mobile" pattern="[0-9]{10}" > (10 digit number)</label></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td><input type="text" name="state"></td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" name="country"></td>
+            </tr>
+            <tr>
+                <td>HOBBIES</td>
+                <td>
+                    <label >Drawing<input type="checkbox" name="hobbies[]" value="drawing"></label>
+                    <label >Singing<input type="checkbox" name="hobbies[]" value="singing"></label>
+                    <label >Dancing<input type="checkbox" name="hobbies[]" value="dancing"></label>
+                    <label >Sketching<input type="checkbox" name="hobbies[]" value="sketching"></label><br>
+                    <label>Others<input type="checkbox" name="hobbies[]" value="others"></label>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;">QUALIFICATION</td>
+                <th >Si.No</th>
+                <th>Examinations</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percentage1"></td>
+                <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percentage1"></td>
+                <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percentage1"></td>
+                <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="percentage1"></td>
+                <td><input type="text" name="year1"></td>
+            </tr>
+            <tr>
+                <td>COURSE</td>
+                <td colspan="3">
+                    <select name="course">
+                        <option value="" >Select a course</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="medical">Medical</option>
+                        <option value="arts">Arts</option>
+                        <option value="commerce">Commerce</option>
+                    </select>
+                </td>
+            </tr>
+            
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
