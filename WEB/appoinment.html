@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Appoinment Request Form</title>
+</head>
+<body bgcolor="pink">
+    <h1>Appoinment Request Form</h1>
+    <h3>Make your appointments easier</h3>
+    <form action="requestform.html">
+        <fieldset>
+            <legend>1.Your basic details</legend><br><br>
+            <table>
+                <tr>
+                    <td><label >Name*:</label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label >Email*:</label></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label >Contact Num::</label></td>
+                    <td><input type="number" name="number"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <form action="request form.html">
+        <fieldset>
+            <legend>2.Appoinment Details</legend><br><br>
+            <table>
+                <tr>
+                    <td><label >Appoinment for*:</label></td>
+                    <td><select name="course" >
+                        <option value="Teaching">Teaching</option>
+                        <option value="Engineering">Engineering</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label >Appoinment Description:</label></td>
+                    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label >Date*:</label></td>
+                    <td><input type="date" name="date"></td>
+                </tr><tr>
+                    <td><label >Time*:</label></td>
+                    <td><input type="time" name="time"></td>
+                </tr><tr>
+                    <td><label >How Long??(Minutes)</label></td>
+                    <td>
+                        <input type="radio" name="minutes" id="minutes" value="30">30
+                        <input type="radio" name="minutes" id="minutes" value="60">60
+                        <input type="radio" name="minutes" id="minutes" value="90">90
+                        <input type="radio" name="minutes" id="minutes" value="more">more
+                    </td>
+                </tr>
+                
+            </table>
+        </fieldset>
+        <br>
+        <input type="submit" value="Request for appointment">
+    </form>
+</body>
+</html>
